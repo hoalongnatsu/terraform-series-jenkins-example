@@ -4,10 +4,12 @@ terraform {
     key            = "terraform-jenkins"
     region         = "us-west-2"
     encrypt        = true
-    role_arn       = "arn:aws:iam::<ACCOUNT_ID>:role/Terraform-SeriesS3BackendRole"
+#     role_arn       = "arn:aws:iam::<ACCOUNT_ID>:role/Terraform-SeriesS3BackendRole"
+    role_arn       = "arn:aws:iam::830525526169:role/Terraform-SeriesS3BackendRole"
     dynamodb_table = "terraform-series-s3-backend"
   }
 }
+
 
 provider "aws" {
   region = "us-west-2"
